@@ -37,6 +37,16 @@
 
             #endregion
             #endregion
+            #region Execution Ways
+            //List<int> Numbers = new List<int>(10) { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //// var Result = Numbers.Where(n => n % 2 == 1);// تنفيز متاخر
+            //var Result = Numbers.Where(n => n % 2 == 1).ToList(); 
+            //Numbers.AddRange(new int[] { 11, 12, 13, 14 ,15});
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
         }
     }
 }
