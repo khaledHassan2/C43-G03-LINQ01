@@ -163,6 +163,46 @@ namespace Demo
             #endregion
 
             #endregion
+            #region Ordering Oprators
+            #region Get Products Ordering By Price Asc
+             // var Result = ProductList.Order(); //Implemint IComparable<Product>
+            ////var Result = ProductList.OrderBy(p => p.UnitPrice);
+            // var Result =from p in ProductList
+            //             orderby p.UnitPrice //ascending
+            //             select p;
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+            #region Get Products Ordering By Price Desc
+
+            //var Result = ProductList.OrderByDescending(p => p.UnitPrice);
+            //var Result =from p in ProductList
+            //            orderby p.UnitPrice descending
+            //            select p;
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+            #region Get Products Ordering By Price Asc And Number Of Items In Stock
+
+            // var Result = ProductList.OrderBy(p => p.UnitPrice).ThenBy(p=>p.UnitsInStock);
+            // var Result = ProductList.OrderBy(p => p.UnitPrice).ThenByDescending(p=>p.UnitsInStock); //Desc
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+            #region Reverse
+            //var Result = ProductList.Where(p => p.UnitsInStock > 0).Reverse();
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+            #endregion
         }
     }
 }
