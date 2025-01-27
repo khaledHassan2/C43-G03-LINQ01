@@ -1,4 +1,5 @@
-﻿namespace Demo
+﻿using static Demo.ListGenerator;
+namespace Demo
 {
     internal class Program
     {
@@ -46,6 +47,10 @@
             //{
             //    Console.WriteLine(item);
             //}
+            #endregion
+            #region Data Setup
+             // Console.WriteLine(ProductList[0]);
+
             #endregion
         }
     }
