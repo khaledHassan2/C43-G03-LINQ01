@@ -49,7 +49,39 @@ namespace Demo
             //}
             #endregion
             #region Data Setup
-             // Console.WriteLine(ProductList[0]);
+            // Console.WriteLine(ProductList[0]);
+
+            #endregion
+            #region Filtration Operators
+            #region 1- Get Product Out Of Stock 
+            //var Result = ProductList.Where(P => P.UnitsInStock == 0);
+            //var Result = from p in ProductList
+            //             where p.UnitsInStock == 0
+            //             select p;
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+            #region 2- Get Product in Stock and in Category Of Meat/Poultry
+            //var Result = ProductList.Where(p => p.UnitsInStock > 0 && p.Category == "Meat/Poultry");
+            //var Result =from p in ProductList
+            //            where p.Category== "Meat/Poultry" && p.UnitsInStock>0
+            //            select p;
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+            #region 3- Get Product out Of Stock And  in First 10 Elements
+            // Not Valid For Query Expression
+            //var Result = ProductList.Where((p, i) => i < 10 && p.UnitsInStock == 0);
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
 
             #endregion
         }
