@@ -84,6 +84,85 @@ namespace Demo
             #endregion
 
             #endregion
+            #region TransFormation (Projection) Operators [Select -SelectMany]
+
+            #region select Pruduct Name
+            //var Result = ProductList.Select(p => p.ProductName);
+            //var Result=from p in ProductList
+            //           select p.ProductName;
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+            #region select Customer  Name
+            //var Result = CustomerList.Select(c => c.CustomerName);
+            //var Result=from c in CustomerList
+            //           select c.CustomerName;
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+            #region Select Customer Order [selectMany]
+            // var Result = CustomerList.SelectMany(c => c.Orders);
+            //var Result=from c in CustomerList
+            //           from o in c.Orders
+            //           select o;
+            // foreach (var item in Result)
+            // {
+            //     Console.WriteLine(item);
+            // }
+            #endregion
+            #region select Prduct Id And Product Name
+            //var Result = ProductList.Where(p => p.UnitsInStock > 0).Select(p => (p.ProductID,p.ProductName));
+            // var Result = ProductList.Where(p => p.UnitsInStock > 0).Select(p =>new { p.ProductID, p.ProductName });
+            //var Result =from p in ProductList
+            //            select new {p.ProductID, p.ProductName};
+
+            // foreach (var item in Result)
+            // {
+            //     Console.WriteLine(item);
+            // }
+            #endregion
+            #region Select Pruduct In Stock And Apply Descount 10% On Its Price
+            //var Result = ProductList.Where(p => p.UnitsInStock > 0)
+            //                       .Select(p => new
+            //                       {
+            //                           Id = p.ProductID,
+            //                           Name = p.ProductName,
+            //                           OldPrice = p.UnitPrice,
+            //                           NewPrice = p.UnitPrice - p.UnitPrice * 0.1m
+            //                       });
+
+            //var Result = from p in ProductList
+            //             select new
+            //             {
+            //                 Id = p.ProductID,
+            //                 Name = p.ProductName,
+            //                 OldPrice = p.UnitPrice,
+            //                 NewPrice = p.UnitPrice - p.UnitPrice * 0.1m
+            //             };
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+            #region Select Index
+            //var Result = ProductList.Where(p => p.UnitsInStock > 0)
+            //                       .Select((p, i) => new
+            //                       {
+            //                           Index = i,
+            //                           Name = p.ProductName,
+            //                       });
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+
+            #endregion
         }
     }
 }
